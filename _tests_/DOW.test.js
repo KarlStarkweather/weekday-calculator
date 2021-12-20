@@ -8,8 +8,8 @@ describe('Day', () => {
     expect(newDay.month).toEqual(12);
   });
   test('should correctly create a date object from the day, month and year', () => {
-    const newDay = new Day('12/1/2021');
-    const testDate = new Date(2021, 11, 1);
+    const newDay = new Day('12/1/2021');  // standard (US) human syntax for dates
+    const testDate = new Date(2021, 11, 1);  // standard js native syntax for Date object definition
     expect(newDay.createDate()).toEqual(testDate);
   });
   test('should return a string of the weekday', () => {
